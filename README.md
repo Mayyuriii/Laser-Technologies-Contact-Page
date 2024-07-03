@@ -10,4 +10,16 @@ HTML: For structuring the content of the web page.
 CSS: For styling the web page and ensuring a responsive design.
 JavaScript: For handling form submissions and integrating Google reCAPTCHA.
 
-![image](https://github.com/Mayyuriii/Laser-Technologies-Contact-Page/assets/134687484/d433581f-21b3-4b54-9aef-ab8bf2b0bfd1)
+laser-technologies-contact-page/
+├── index.html       # Main HTML file
+├── style.css        # CSS file for styling
+├── script.js        # JavaScript file for form handling
+├── logo.jpg         # Logo image
+├── demo-icon.jpg    # Demo icon image
+├── quote-icon.jpg   # Quote icon image
+├── sample-icon.jpg  # Sample icon image
+├── query-icon.jpg   # Query icon image
+├── google-map-icon.png # Google map icon image
+└── README.md        # This file
+
+
