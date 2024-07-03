@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Technologies Contact Form</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Laser Technologies Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-section">
+            <div class="contact-info">
+                <h1>Get in touch</h1>
+                <p>Need our expertise for choosing your next laser machine?</p>
+            </div>
+            <div class="contact-form">
+                <p class="form-intro">Fill out the form to get a free consultation.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="organization" placeholder="Organisation Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="contact" placeholder="Contact Number" required>
+                        <input type="email" name="email" placeholder="Email ID" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="remark" placeholder="Remark" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LcJxfgpAAAAAMx_-5kKpEL1s8f5a6uyM9DuVf7a"></div>
+                        <div class="error-message" id="recaptchaError"></div>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <div id="message" class="message"></div>
+                    <div class="success-message" id="successMessage"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="map-container">
+        <div class="info-box">
+            <h1>Headquarters office</h1>
+            <p>Laser Technologies Pvt Ltd</p>
+            <p>PAP/R/406 Rabale MIDC Near Dol Electric Company Rabale MIDC, Navi Mumbai - 400701.</p>
+            <p>Landline - 022 4131 0099</p>
+            <p class="google-map-link">
+                <img src="google-map-icon.png" alt="Google Map Icon">
+                <a href="https://www.google.com/maps?q=PAP/R/406+Rabale+MIDC+Navi+Mumbai+400701">Google Map Link</a>
+            </p>
+        </div>
+        <section class="container my">
+            <div class="row">
+                <div class="col-12">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div class="top-locations">
+            <div class="location" id="mumbai">
+                <h2>Mumbai</h2>
+                <p>PAP/R/406 Rabale MIDC<br>
+                Near Dol Electric Company<br>
+                Rabale MIDC, Navi Mumbai - 400701.</p>
+            </div>
+            <div class="location" id="pune">
+                <h2>Pune</h2>
+                <p>"S" Block, Plot No.186,<br>
+                MIDC, Bhosari,<br>
+                Pune - 411026</p>
+            </div>
+            <div class="location" id="gujarat">
+                <h2>Gujarat</h2>
+                <p>A-5, GF, Barcelona Multiple<br>
+                Business Campus, Odhav Ring<br>
+                Road Circle, Ahmedabad,<br>
+                Gujarat - 382430</p>
+            </div>
+        </div>
+        <div class="bottom-locations">
+            <div class="location" id="delhi">
+                <h2>Delhi</h2>
+                <p>S-98 Second Floor<br>
+                Phase - 2, Okhla Industrial<br>
+                Area, New Delhi - 110020</p>
+            </div>
+            <div class="location" id="karnataka">
+                <h2>Karnataka</h2>
+                <p>77/78/B, Janapriya Commercial<br>
+                Complex, Magadi Main Rd.<br>
+                Sunkadakatte, Bengaluru,<br>
+                Karnataka - 560091</p>
+            </div>
+        </div>
+    </div>
+
+    <!--4th page-->
+    <div class="help">
+        <h1>How can we help?</h1>
+    </div>
+    <div class="actions">
+        <div class="action">
+            <img src="demo-icon.jpg" alt="Demo Icon">
+            <p>Schedule a <strong>Demo</strong></p>
+        </div>
+        <div class="action">
+            <img src="quote-icon.jpg" alt="Quote Icon">
+            <p>Request a <strong>Quote</strong></p>
+        </div>
+        <div class="action">
+            <img src="sample-icon.jpg" alt="Sample Icon">
+            <p>Send us a <strong>Sample</strong></p>
+        </div>
+        <div class="action">
+            <img src="query-icon.jpg" alt="Query Icon">
+            <p>Raise your <strong>Query</strong></p>
+        </div>
+    </div>
+    <div class="newsletter">
+        <label for="email">Subscribe To Our Newsletter & Stay Updated</label>
+        <form id="newsletterForm" action="#" method="post">
+          <input type="email" id="email" name="email" placeholder="Your Email">
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div id="message" class="message"></div>
+      </div>
+</main>
+<footer>
+    <img src="logo.jpg" alt="Laser Technologies Logo">
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px 5px 30px 5px;
+    flex: 1;
+    min-width: 300px;
+    margin-right: 40px;
+    height: 300px;
+}
+
+.contact-info h1 {
+    font-size: 2.9em;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.contact-info p {
+    font-size: 1.7em;
+    color: #ccc;
+    margin-left: 40px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-intro {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form .form-group textarea {
+    width: 100%;
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form .g-recaptcha {
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.form-group .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .form-group .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+.map-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin-inline-start: -320px;
+}
+
+.info-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 30px 5px 30px 5px;
+    max-width: 300px;
+}
+
+.info-box h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.info-box p {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.google-map-link {
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.google-map-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+/*3rd page*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.top-locations, .bottom-locations {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.location {
+    position: relative;
+    width: 200px;
+    margin: 20px;
+    text-align: left;
+}
+
+.location h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.location p {
+    margin: 5px 0;
+}
+
+#pune::before, #mumbai::before, #gujarat::before, #delhi::before, #karnataka::before {
+    font-size: 9em;
+    color: rgba(0, 0, 0, 0.07);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+    text-transform: uppercase;
+}
+
+#pune::before { content: "P"; left: 0; margin-top: 25px; margin-inline-start: -70px; }
+#mumbai::before { content: "M"; left: 0; margin-top: 25px; margin-inline-start: -90px; }
+#gujarat::before { content: "G"; left: 0; margin-top: 25px; margin-inline-start: -90px; }
+#delhi::before { content: "D"; left: 0; margin-top: 25px; margin-inline-start: -80px; }
+#karnataka::before { content: "K"; left: 0; margin-top: 25px; margin-inline-start: -75px; }
+
+
+.help {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.help h1 {
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.action {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 30px;
+}
+
+.action img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.action p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.newsletter {
+    background: #e53935;
+    padding: 20px;
+    border-radius: 35px 9px 35px 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    top: 20%;
+    position: relative;
+    display: flex;
+}
+
+.newsletter label {
+    margin-bottom: 10px;
+    display: block;
+    color: #fff; 
+    font-size: 16px;
+    margin-right: 20%;
+    text-align: center;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px 20px 20px 20px; 
+    width: 200px;
+    outline: none;
+    margin-left: 100px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background: #090000; 
+    color: #fff; 
+    border-radius: 20px 20px 20px 20px; 
+    cursor: pointer;
+    height: 40px;
+    margin: 0;
+  }
+
+  /* Message Styles */
+.message {
+    margin-top: 15px;
+    text-align: center;
+    display: none; /* Initially hidden */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em; /* Ensure it's readable */
+}
+
+.message.success {
+    background-color: #4caf50; /* Green background for success */
+    color: white; /* White text color */
+}
+
+.message.error {
+    background-color: #f44336; /* Red background for error */
+    color: white; /* White text color */
+}
+  
+footer {
+    background: #160101;
+    color: #fff;
+    padding: 70px;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
